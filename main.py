@@ -12,8 +12,11 @@ if __name__ == '__main__':
     my_pokemon = EletricPokemon('Pikachu')
     new_pokemon = FirePokemon('Charmander')
 
-    player.add_pokemons(my_pokemon)
-    player.add_pokemons(new_pokemon)
+    print(player)
+    player.pokemons_list()
+
+    player.catch(my_pokemon)
+    player.catch(new_pokemon)
 
     print(player)
     player.pokemons_list()

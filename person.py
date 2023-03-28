@@ -1,7 +1,10 @@
+from random import choice
+NAMES = ['Brok', 'Misty', 'Gary', 'John']
+
 class Person:
 
     def __init__(self, name=None, pokemons=[]) -> None:
-        self.name = name if name else 'Mistery'
+        self.name = name if name else choice(NAMES)
         self.pokemons = pokemons
 
     def catch(self, pokemon) -> None:

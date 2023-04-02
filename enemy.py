@@ -2,10 +2,14 @@ from random import choice
 from person import Person
 from fire_pokemon import FirePokemon
 from wind_pokemon import WindPokemon
+from water_pokemon import WaterPokemon
+from eletric_pokemon import EletricPokemon
 
 POKEMONS = [
     FirePokemon("Charmilion"),
-    WindPokemon("Bubassauro")
+    WindPokemon("Bubassauro"),
+    WaterPokemon("Squardle"),
+    EletricPokemon("Raichu")
 ]
 
 class Enemy(Person):

@@ -2,10 +2,10 @@ from random import randint
 
 class Pokemon:
     
-    def __init__(self, element, species, level=randint(1, 10), name=None):
+    def __init__(self, element, species, level=None, name=None):
         self.element = element
         self.species = species
-        self.level = level
+        self.level = level if level else randint(1, 100)
         self.name = name if name else species
 
     def __str__(self) -> str:

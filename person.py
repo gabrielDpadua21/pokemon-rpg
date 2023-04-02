@@ -3,6 +3,7 @@ NAMES = ['Brok', 'Misty', 'Gary', 'John']
 
 class Person:
     pokemon_choose = None
+    money = 0
 
     def __init__(self, name=None, pokemons=[]) -> None:
         self.name = name if name else choice(NAMES)
@@ -38,5 +39,15 @@ class Person:
                 break
             except: 
                 print('Wrong option, try again')
+
+
+    def win_battle(self, value=1) -> None:
+        self.money += value
+
+    
+    def report(self) -> None:
+        print(f"Name: {self.name}")
+        print(f"Pokemons: {len(self.pokemons)}")
+        print(f"Money: {self.money}")
 
 

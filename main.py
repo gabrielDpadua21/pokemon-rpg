@@ -35,3 +35,4 @@ if __name__ == '__main__':
     print(player)
     print(enemy)
     player.battle(enemy)
+    player.report()

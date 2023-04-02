@@ -17,6 +17,8 @@ class Player(Person):
         winner = randint(1, 2)
         if winner == 1:
             print(f"{self.pokemon_choose.name} win battle - {self.name} is the winner")
+            self.win_battle(enemy_choice.level * 5)
         else:
             print(f"{enemy_choice.name} win battle - {enemy.name} is the winner")
+            enemy.win_battle(self.pokemon_choose * 5)
         print('________________________________________')

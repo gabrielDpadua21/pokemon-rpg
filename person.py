@@ -27,9 +27,10 @@ class Person:
     
 
     def choose(self) -> None:
+        print('________________________________________')
         print('Choice a pokemon')
         self.pokemons_list()
-        print('_____________________')
+        print('________________________________________')
         while len(self.pokemons):
             try:
                 option = int(input('Type the option: '))

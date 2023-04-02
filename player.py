@@ -7,6 +7,7 @@ class Player(Person):
     def battle(self, enemy) -> None:
         print(f"PokeBattle {self.name} VS {enemy.name}")
         self.choose()
+        print('________________________________________')
         print(f"{self.name} chooses: {self.pokemon_choose}")
         enemy_choice = choice(enemy.pokemons)
         print(f"{enemy.name} chooses: {enemy_choice}")
@@ -18,3 +19,4 @@ class Player(Person):
             print(f"{self.pokemon_choose.name} win battle - {self.name} is the winner")
         else:
             print(f"{enemy_choice.name} win battle - {enemy.name} is the winner")
+        print('________________________________________')

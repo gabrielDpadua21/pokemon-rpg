@@ -7,7 +7,7 @@ from eletric_pokemon import EletricPokemon
 
 POKEMONS = [
     FirePokemon("Charmilion"),
-    WindPokemon("Bubassauro"),
+    WindPokemon("Bulbassauro"),
     WaterPokemon("Squardle"),
     EletricPokemon("Raichu")
 ]

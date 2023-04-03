@@ -8,7 +8,11 @@ class Enemy(Person):
     type = 'Enemy'
 
     def __init__(self, name=None, pokemons=[]):
-        if not pokemons:
+        if pokemons:
+            super().__init__(name=name, pokemons=pokemons)
+        else:
+            aleatory_pokemons = []
             for _ in range(2):
-                pokemons.append(choice(POKEMONS))
-        super().__init__(name=name, pokemons=pokemons)
+                aleatory_pokemons.append(choice(POKEMONS))
+            super().__init__(name=name, pokemons=aleatory_pokemons)
+        

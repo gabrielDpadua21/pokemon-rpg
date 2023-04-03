@@ -1,11 +1,11 @@
-from eletric_pokemon import EletricPokemon
-from fire_pokemon import FirePokemon
-from water_pokemon import WaterPokemon
-from wind_pokemon import WindPokemon
+from classes.eletric_pokemon import EletricPokemon
+from classes.fire_pokemon import FirePokemon
+from classes.water_pokemon import WaterPokemon
+from classes.wind_pokemon import WindPokemon
 import pickle
-from player import Player
-from enemy import Enemy
-from banner import art
+from classes.player import Player
+from classes.enemy import Enemy
+from assets.banner import art
 import os
 
 first_catch = {

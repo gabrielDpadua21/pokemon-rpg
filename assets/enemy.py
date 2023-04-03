@@ -1,6 +1,6 @@
 from random import choice
-from person import Person
-from pokemons_list import POKEMONS
+from classes.person import Person
+from classes.pokemons_list import POKEMONS
 
 
 

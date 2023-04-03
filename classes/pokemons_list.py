@@ -1,7 +1,7 @@
-from fire_pokemon import FirePokemon
-from wind_pokemon import WindPokemon
-from water_pokemon import WaterPokemon
-from eletric_pokemon import EletricPokemon
+from classes.fire_pokemon import FirePokemon
+from classes.wind_pokemon import WindPokemon
+from classes.water_pokemon import WaterPokemon
+from classes.eletric_pokemon import EletricPokemon
 
 POKEMONS = [
     FirePokemon("Charmilion"),

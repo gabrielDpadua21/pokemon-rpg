@@ -1,5 +1,5 @@
 from random import randint
-from pokemon import Pokemon
+from classes.pokemon import Pokemon
 
 class EletricPokemon(Pokemon):
     element = 'Eletric'
